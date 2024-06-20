@@ -6,13 +6,13 @@
 
 ### Product of Array Except Self
 
-![i2](/images/poads_2.jpg)
-
 **The idea to solve the problem is:** *the product discluding an element can be divided into two parts: left side product and right side product*
 
-![i1](/images/poads_1.jpg)
+![i2](/images/poads_2.jpg)
 
 To find the ```left product``` of the ```i-th``` element, we multiply the ```(i-1)-th``` element with its left product, starting from the ```0-th``` element with left product of 1 (first element doesn't have left side).
+
+![i1](/images/poads_1.jpg)
 
 The same goes for finding ```right product``` of ```i-th``` element, we multiply the ```(i+1)-th``` element with its right product.
 
