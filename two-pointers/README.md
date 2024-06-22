@@ -18,7 +18,8 @@ sum = nums[i] + nums[j]
 
 ![i1](/images/two_sum_II_2.jpg)
 
-The same goes for finding ```right product``` of ```i-th``` element, we multiply the ```(i+1)-th``` element with its right product.
+If the sum is larger, we know that we have to decrease ```j``` because the elements after ```j-th``` are all bigger than ```j-th``` element, which's not gonna make the ```sum``` any closer to the target.
 
-After that, we just loop through the products and multiply them together
-```i-th product except self``` = ```i-th left product``` * ```i-th right product```
+Similarly, if the sum is smaller, we know that we have to increase ```i``` because the elements before ```i-th``` are all bigger than ```i-th``` element, which's not gonna make the ```sum``` any closer to the target.
+
+Because it is guaranteed to have only 1 solution, once the left pointer ```i``` reaches a solution element, the sum will always bigger than the ```target``` until the right pointer ```j``` also reaches the other solution element, and vice versa. At this point, we return the solution.
