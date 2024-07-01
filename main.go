@@ -33,5 +33,9 @@ func testTwoPointers() {
 }
 
 func testStack() {
-	stack.TestValidateParentheses()
+	// stack.TestValidateParentheses()
+	// stack.TestMinStack()
+	// stack.TestEvalRPN()
+	// stack.TestGenerateParentheses()
+	stack.TestDailyTemperatures()
 }
