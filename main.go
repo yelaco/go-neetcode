@@ -37,5 +37,7 @@ func testStack() {
 	// stack.TestMinStack()
 	// stack.TestEvalRPN()
 	// stack.TestGenerateParentheses()
-	stack.TestDailyTemperatures()
+	// stack.TestDailyTemperatures()
+	// stack.TestCarFleet()
+	stack.TestLargestRectArea()
 }

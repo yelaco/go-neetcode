@@ -3,7 +3,7 @@ package two_pointers
 import (
 	"fmt"
 
-	"github.com/minhquang053/neetcode/utils"
+	"github.com/minhquang053/neetcode/util"
 )
 
 func maxArea(heights []int) int {
@@ -13,7 +13,7 @@ func maxArea(heights []int) int {
 
 	for l < r {
 		// area = shorter vertical line * (right - left)
-		res = utils.Max(utils.Min(heights[l], heights[r])*(r-l), res)
+		res = util.Max(util.Min(heights[l], heights[r])*(r-l), res)
 
 		/*
 			By keeping the higher vertical line,

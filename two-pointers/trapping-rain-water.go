@@ -3,7 +3,7 @@ package two_pointers
 import (
 	"fmt"
 
-	"github.com/minhquang053/neetcode/utils"
+	"github.com/minhquang053/neetcode/util"
 )
 
 func trapRainWater(heights []int) int {
@@ -24,12 +24,12 @@ func trapRainWater(heights []int) int {
 		*/
 		if leftMax < rightMax {
 			l += 1
-			leftMax = utils.Max(leftMax, heights[l])
+			leftMax = util.Max(leftMax, heights[l])
 			// add the vertical gap to the sum area
 			res += leftMax - heights[l]
 		} else {
 			r -= 1
-			rightMax = utils.Max(rightMax, heights[r])
+			rightMax = util.Max(rightMax, heights[r])
 			// add the vertical gap to the sum area
 			res += rightMax - heights[r]
 		}
